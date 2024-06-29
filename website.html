@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thechad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3efe9;
+            font-family: 'Inter';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 38px;
+            color: #333;
+        }
+        p {
+            font-size: 38px;
+            font-weight: 700;
+            color: #333;
+            margin: 20px 20px;
+        }
+        .video-wrapper {
+            width: 100%;
+            height: 56.25vw;
+            max-height: 100vh;
+            max-width: 50.77vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+        }
+        button {
+            font-size: 20px;
+            padding: 12px 30px;
+            background-color: black;
+            color: #f3efe9;
+            font-family: 'Inter';
+            font-weight: 700;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #313131;
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.8);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;       
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>thechad</h1>
+    <p>AI that puts your Tinder on steroids ❤️</p>
+    <div class="video-wrapper">
+        <video id="chadVideo" controls >
+            <source src="public/videos/chad.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="button-container">
+        <button onclick="window.location.href='https://buy.stripe.com/6oE8xL1Jx8Hx70keUV'">get chad</button>
+        <button onclick="window.location.href='https://buy.stripe.com/5kA29newj5vl70kaEG'">get gigachad</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var video = document.getElementById('chadVideo');
+            video.muted = true;
+            video.play().catch(function(error) {
+                console.log("Video play failed:", error);
+            });
+        });
+    </script>
+</body>
+</html>
